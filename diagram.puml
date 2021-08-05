@@ -1,0 +1,13 @@
+@startuml
+    App -> NewExpense :Data is generated here
+    App -> Expenses :Data is needed here
+    
+    NewExpense -> ExpenseForm : User's input form
+
+    Expenses --> Card : UI
+    Expenses ->ExpenseItem : Every expense item is listed here
+
+    ExpenseItem --> Card : UI
+    ExpenseItem -> ExpenseDate : Every expense's date
+
+@enduml
