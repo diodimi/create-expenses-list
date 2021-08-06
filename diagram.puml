@@ -6,6 +6,7 @@
 
     Expenses --> Card : UI
     Expenses ->ExpenseItem : Every expense item is listed here
+    Expenses ->ExpensesFilter : Filter by year
 
     ExpenseItem --> Card : UI
     ExpenseItem -> ExpenseDate : Every expense's date
